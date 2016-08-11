@@ -17,6 +17,7 @@
 		7B28D45F1D40391300512E6C /* pp2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 7B28D45B1D40391300512E6C /* pp2.PNG */; };
 		7B28D4601D40391300512E6C /* t1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B28D45C1D40391300512E6C /* t1.png */; };
 		7B28D4611D40391300512E6C /* t2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B28D45D1D40391300512E6C /* t2.png */; };
+		7BCA0E031D5AC9E800231EED /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCA0E021D5AC9E800231EED /* DestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7B28D45B1D40391300512E6C /* pp2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pp2.PNG; sourceTree = "<group>"; };
 		7B28D45C1D40391300512E6C /* t1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t1.png; sourceTree = "<group>"; };
 		7B28D45D1D40391300512E6C /* t2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t2.png; sourceTree = "<group>"; };
+		7BCA0E021D5AC9E800231EED /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				7B28D45D1D40391300512E6C /* t2.png */,
 				7B28D4461D4014D300512E6C /* AppDelegate.swift */,
 				7B28D4481D4014D300512E6C /* ViewController.swift */,
+				7BCA0E021D5AC9E800231EED /* DestinationViewController.swift */,
 				7B28D44A1D4014D300512E6C /* Main.storyboard */,
 				7B28D4581D40196300512E6C /* PostCell.swift */,
 				7B28D44D1D4014D300512E6C /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 				7B28D4491D4014D300512E6C /* ViewController.swift in Sources */,
 				7B28D4471D4014D300512E6C /* AppDelegate.swift in Sources */,
 				7B28D4591D40196300512E6C /* PostCell.swift in Sources */,
+				7BCA0E031D5AC9E800231EED /* DestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 				7B28D4571D4014D400512E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

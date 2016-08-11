@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DestinationViewDelegate {
     @IBOutlet var newFeed: UITableView!
     var handles : [String] = ["Ash", "Red"]
     var profilePics : [UIImage] = []
     var tweets : [String] = ["Gotta catch them allhgjkhghjkggkjggjkgjgjkggjkgjkgkghjkg", "fck u ash"]
     var myImages : [UIImage] = []
     
+    var index = 1
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        newFeed.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +51,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return handles.count
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        index = indexPath.row
+        print(indexPath.row)
+        self.performSegueWithIdentifier("tabCellSegue", sender: indexPath);
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        if (segue.identifier == "tabCellSegue") {
+            var controller = segue.destinationViewController as! DestinationViewController
+            
+            var row = (sender as! NSIndexPath).row
+            controller.LabelText = tweets[row]
+            controller.index = row
+            controller.delegate = self
+            
+        }
+        
+        
+        
+    }
+    
+    func setText(text: String, index: Int) {
+        print(text)
+        print(index)
+        tweets[index] = text
     }
     
     func tableView(tableView: UITableView,
